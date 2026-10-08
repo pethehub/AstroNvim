@@ -15,6 +15,9 @@ return {
       "css",
       "javascript",
       "typescript",
+      "yaml",
+      "dockerfile",
+      "json",
       -- add more arguments for adding more treesitter parsers
     },
   },

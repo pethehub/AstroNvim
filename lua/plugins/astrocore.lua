@@ -23,6 +23,11 @@ return {
     diagnostics = {
       virtual_text = true,
       underline = true,
+      jump = {
+        on_jump = function(_, bufnr)
+          vim.diagnostic.open_float({ bufnr = bufnr, scope = "cursor", focus = false })
+        end,
+      },
     },
     -- passed to `vim.filetype.add`
     filetypes = {
